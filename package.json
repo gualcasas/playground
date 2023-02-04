@@ -10,18 +10,19 @@
         "build": "turbo run build",
         "dev": "turbo run dev",
         "lint": "turbo run lint",
-        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+        "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore",
+        "clean": "turbo run clean && rm -rf node_modules"
     },
     "prettier": {
         "tabWidth": 4
     },
     "devDependencies": {
         "eslint-config-custom": "workspace:*",
-        "prettier": "latest",
-        "turbo": "latest"
+        "prettier": "^2.8.3",
+        "turbo": "^1.7.3"
     },
     "engines": {
-        "node": ">=14.0.0"
+        "node": ">=18.0.0"
     },
     "dependencies": {
         "dotenv-cli": "^7.0.0"

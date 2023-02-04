@@ -8,6 +8,7 @@
         "node": ">=16"
     },
     "scripts": {
+        "clean": "rm -rf node_modules && rm -rf dist && rm -rf ../../.parcel-cache",
         "dev": "concurrently --kill-others \"wait-on dist/main.js && nodemon\" \"parcel watch\"",
         "build": "parcel build"
     },

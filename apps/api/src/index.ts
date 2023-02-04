@@ -6,8 +6,8 @@ app.use(async (ctx) => {
 });
 
 try {
-    app.listen(3000);
-    console.log("\n\nListening on: http://localhost:3000\n\n");
+    app.listen(8080);
+    console.log("\n\nListening on: http://localhost:8080\n\n");
 } catch (error) {
     console.log("server closed - error: ", error);
 }
