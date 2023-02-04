@@ -1,0 +1,12 @@
+{
+    "include": ["src/**/*"],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "~*": ["./*"]
+        },
+        "strict": true,
+        "esModuleInterop": true,
+        "noEmit": true
+    }
+}
