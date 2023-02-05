@@ -12,14 +12,14 @@
         "dev": "concurrently --kill-others \"wait-on dist/main.js && nodemon\" \"parcel watch\"",
         "build": "parcel build"
     },
+    "dependencies": {
+        "koa": "^2.14.1"
+    },
     "devDependencies": {
         "@types/koa": "^2.13.5",
         "concurrently": "^7.6.0",
         "nodemon": "^2.0.20",
         "parcel": "^2.8.3",
         "wait-on": "^7.0.1"
-    },
-    "dependencies": {
-        "koa": "^2.14.1"
     }
 }
